@@ -7,7 +7,9 @@
       <div class="header-top-nav jh-container">
         <div class="header-nav-left">
           <ul>
-            <li>马上登陆</li>
+            <li>马上登陆
+              <span class="iconfont iconleimu"></span>
+            </li>
             <li>免费注册</li>
           </ul>
         </div>
