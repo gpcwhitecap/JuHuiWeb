@@ -1,0 +1,53 @@
+@import "../less/unti.less";
+
+.home-card-goods {
+  padding: 0 8px;
+  color: #333;
+
+  .home-card-goods-img {
+    width: 100%;
+  }
+  .home-card-goods-title {
+    margin-top: @spacing-base;
+    margin-bottom: @spacing-base;
+  }
+  .home-card-goods-rebate {
+    margin-top: @spacing-base;
+  }
+  .home-card-rebate-money {
+    color: @background-theme;
+    font-size: @font-size-h9;
+    span {
+      font-size: @font-size-h8;
+      font-weight: bold;
+    }
+  }
+  .home-card-rebate-sumary {
+    font-size: @font-size-h10;
+    margin-top: @spacing-base-small;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    .home-card-rebate-through {
+      text-decoration: line-through;
+    }
+  }
+  .home-card-goods-tags {
+    display: flex;
+    .cf-goods-vouchers {
+      background: linear-gradient(90deg, rgb(250, 111, 61), rgb(255, 68, 0));
+    }
+    .cf-goods-ret-money {
+      background: linear-gradient(90deg, rgb(247, 67, 147), @background-theme);
+    }
+    .home-card-goods-tag {
+      display: inline-block;
+      padding: @spacing-base-small;
+      margin-right: @spacing-base-small;
+      border-radius: @spacing-base-small;
+      line-height: 1.2;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}

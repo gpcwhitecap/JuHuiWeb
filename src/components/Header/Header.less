@@ -1,11 +1,14 @@
 @import "../less/unti.less";
 .header-warpper {
-  background-color: red;
+  // background-color: red;
   .header-top-nav-wrap {
     font-size: @font-size-h10;
     line-height: @line-height-h3;
     background-color: @background-nav;
-
+    .iconfont {
+      font-size: @font-size-h10;
+      // margin-right: @spacing-base-small;
+    }
     .header-top-nav {
       display: flex;
       justify-content: space-between;
@@ -13,9 +16,129 @@
     .header-nav-left ul,
     .header-nav-right ul {
       display: flex;
+      li {
+        margin-right: @spacing-2x-base;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          color: @text-color-hover;
+          .iconxiangxia2:before {
+            content: "\e76e";
+          }
+        }
+      }
     }
   }
-  .iconfont{
-    font-size: 40px;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    .header-logo {
+      height: 100%;
+    }
+    .header-main-banner {
+      height: 100%;
+    }
+    .header-search {
+      width: 50%;
+
+      margin: 0 @spacing-2x-base;
+      flex: 1;
+      .el-input__inner {
+        border: 2px solid @background-theme;
+      }
+      .el-input-group__append {
+        background: @background-theme;
+        border: 2px solid @background-theme;
+        color: #fff;
+      }
+    }
+    img {
+      max-width: 100%;
+      max-height: 110px;
+    }
+  }
+  .header-tab-content {
+    height: 54px;
+    background: @background-theme;
+
+    .header-tabs {
+      height: 100%;
+      ul {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        // line-height: 54px;
+        font-size: @font-size-h8;
+        color: #fff;
+        li {
+          margin-right: @spacing-base;
+          a {
+            display: inline-block;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 16px;
+            padding: 0 24px;
+            color: #fff;
+            &.active,
+            &.router-link-active {
+              background: #fff;
+              color: @background-theme;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .header-second-nav {
+    width: 100%;
+    height: 54px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    position: relative;
+    z-index: 100;
+    transition: 0.2s ease-in;
+    ul{
+      display: flex;
+    }
+    li {
+      line-height: 54px;
+      padding: 0 10px;
+      margin-right: 10px;
+      font-size: 14px;
+      position: relative;
+      
+      a{
+        color: #333;
+        text-decoration: none;
+        &:hover{
+          color: @text-color-hover;
+        }
+      }
+      &.active{
+        a{
+          color: @text-color-hover;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;        
+          width: 100%;
+          height: 2px;
+          background: @text-color-hover;
+        }
+      }
+    }
   }
 }

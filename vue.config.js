@@ -1,26 +1,11 @@
 const path = require('path')
 module.exports = {
-    chainWebpack: config => {
-        const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-        types.forEach(type =>
-            addStyleResource(config.module.rule('less').oneOf(type)))
-    },
-    // css: {
-    //     loaderOpthions:{
-    //         less: {
-    //             javascriptEnabled: true
-    //         }
-    //     }
-    // }
-}
-
-// add style resource
-function addStyleResource(rule) {
-    rule.use('style-resource')
-        .loader('style-resources-loader')
-        .options({
-            patterns: [
-                path.resolve(__dirname, './src/components/less/unti.less')
+    pluginOptions: {
+        'style-resources-loader': {
+            'preProcessor': 'less',
+            'patterns': [
+                path.resolve(__dirname, './src/components/less/unti.less'),
             ]
-        })
+        }
+    }
 }

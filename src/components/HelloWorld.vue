@@ -8,21 +8,21 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
-      count: 0
-    }
+      count: 0,
+    };
   },
-  created (){
+  created() {
     this.$axios({
-        type: 'get',
-        async: false,
-        url: '/money/get'
-      }).then(res => {
-        console.log(res)
-      })
-  }
-}
+      type: 'get',
+      async: false,
+      url: '/money/get',
+    }).then((res) => {
+      console.log(res);
+    });
+  },
+};
 </script>

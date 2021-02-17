@@ -1,0 +1,84 @@
+@import "../less/unti.less";
+
+.jh-card-goods {
+  display: flex;
+  flex-wrap: wrap;
+  padding: @spacing-base;
+  color: black;
+  .jh-card-goods-img {
+    width: 100%;
+  }
+  .jh-card-goods-info {
+    width: 100%;
+    padding-top: @spacing-base;
+    background-color: #fff;
+  }
+  .jh-card-goods-title {
+    padding: 0 @spacing-2x-base;
+    margin-bottom: @spacing-base;
+  }
+  .jh-card-goods-tags {
+    display: flex;
+    padding: 0 @spacing-2x-base;
+    .cf-goods-vouchers {
+      background: linear-gradient(90deg, rgb(250, 111, 61), rgb(255, 68, 0));
+    }
+    .cf-goods-ret-money {
+      background: linear-gradient(90deg, rgb(247, 67, 147), @background-theme);
+    }
+    .jh-card-goods-tag {
+      display: inline-block;
+      padding: @spacing-base-small;
+      margin-right: @spacing-base-small;
+      border-radius: @spacing-base-small;
+      line-height: 1.2;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .jh-card-goods-rebate {
+    display: flex;
+    position: relative;
+    margin-top: @spacing-3x-base;
+    background-color: rgb(230, 20, 20);
+    color: #fff;
+    padding: @spacing-base-small @spacing-base;
+
+    .jh-card-rebate-money {
+      font-size: @spacing-3x-base;
+    }
+    .jh-card-rebate-sumary {
+      padding-left: @spacing-base;
+      flex: 1;
+    }
+    .jh-card-rebate-through {
+      text-decoration: line-through;
+    }
+    .jh-card-rebate-sales {
+      border: 0px solid black;
+      box-sizing: border-box;
+      display: inline-block;
+      flex-direction: row;
+      place-content: flex-start center;
+      flex-shrink: 0;
+      padding: 0px 6px;
+      background-color: rgba(0, 0, 0, 0.1);
+      align-items: center;
+      border-radius: 3px;
+    }
+    .cf-goods-button {
+      width: 42px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #ffed6b;
+      color: rgb(230, 20, 20);
+      display: flex;
+      font-size: @font-size-h8;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50% 0 0 50%;
+    }
+  }
+}

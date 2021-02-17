@@ -1,0 +1,44 @@
+@import "../less/unti.less";
+.jh-footer{
+    background-color: #444;
+
+    .jh-footer-main{
+        color: #fff;
+        a{
+            color: #fff;
+        }
+        .jh-footer-list{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            text-align: justify;
+            text-align-last: justify;
+            padding: @spacing-4x-base @spacing-10x-base 0 @spacing-10x-base;
+        }
+        .jh-footer-item{
+            text-align-last: left;
+            dt{
+                margin-bottom: @spacing-2x-base;
+                text-align: left;
+                font-size: @font-size-h8;
+                font-weight: 700;
+            }
+            dd{
+                margin-bottom: @spacing-base;
+                text-align: left;
+            }
+            
+        }
+
+        .jh-link{
+            padding: @spacing-4x-base @spacing-10x-base 0 @spacing-10x-base;
+            text-align: center;
+            color: #999;
+            a{
+                display: inline-block;
+                padding: 0 @spacing-base;
+                color: #999;
+            }
+        }
+    }
+}

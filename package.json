@@ -3,20 +3,53 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint --fix --ext .js,.vue src/"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "element-plus": "^1.0.2-beta.29",
     "mockjs": "^1.1.0",
-    
-    "vue": "^3.0.4"
+    "vue": "^3.0.4",
+    "vue-router": "4.0.0-rc.1"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.6.0",
     "less": "^4.1.0",
     "less-loader": "^7.3.0",
+    "style-resources-loader": "^1.4.1",
     "vite": "^1.0.0-rc.13",
-    "style-resources-loader": "^1.4.1"
+    "vue-cli-plugin-style-resources-loader": "^0.1.4"
+  },
+  "browserslist": {
+    "description": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.01%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
   }
 }

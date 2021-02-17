@@ -1,0 +1,311 @@
+@import "../../components/less/unti.less";
+.jh-home {
+  .jh-home-content {
+    padding: @spacing-3x-base;
+    background: #f7f7f7;
+    a {
+      text-decoration: none;
+    }
+    .cf-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cf-goods-content {
+      width: 25%;
+    }
+  }
+  .jh-white-panel {
+    .jh-white-panel-title {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      line-height: 42px;
+      color: #585858;
+      font-size: @font-size-h7;
+      margin-bottom: @spacing-base;
+      padding-bottom: @spacing-base;
+      padding-top: @spacing-base;
+      border-bottom: 1px solid #d2c5bf;
+      .jh-white-panel-title-more {
+      }
+    }
+  }
+
+  .jh-home-panel {
+    background: #fff;
+    padding-top: @spacing-base;
+    .jh-home-panel-title{
+        display: flex;
+        justify-content: space-between;
+        font-size: @font-size-h8;
+        padding: @spacing-base @spacing-3x-base;
+    }
+    .jh-home-cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .jh-home-card {
+      box-sizing: border-box;
+      width: 33.3333%;
+      border-right: 1px solid #f6f6f6;
+      border-bottom: 1px solid #f6f6f6;
+      .jh-home-card-goods {
+        display: flex;
+        align-items: center;
+        padding: @spacing-2x-base 0;
+        .pic {
+          padding: 0 @spacing-3x-base;
+          max-width: 33.33%;
+        }
+        .jh-home-card-goods-info {
+          flex: 1;
+        }
+        .jh-home-card-goods-tags {
+          display: flex;
+          padding: @spacing-base 0;
+          .cf-goods-vouchers {
+            background: linear-gradient(
+              90deg,
+              rgb(250, 111, 61),
+              rgb(255, 68, 0)
+            );
+          }
+          .cf-goods-ret-money {
+            background: linear-gradient(
+              90deg,
+              rgb(247, 67, 147),
+              @background-theme
+            );
+          }
+          .jh-home-card-goods-tag {
+            display: inline-block;
+            padding: @spacing-base-small;
+            margin-right: @spacing-base-small;
+            border-radius: @spacing-base-small;
+            line-height: 1.2;
+            color: #fff;
+            font-weight: bold;
+          }
+        }
+        .jh-home-card-goods-title {
+          color: black;
+          font-size: @font-size-h8;
+          line-height: 22px;
+          text-align: left;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          transition: 0.2s;
+        }
+        .jh-home-card-rebate-money{
+            font-size: @font-size-h8;
+            color: #333;
+            font-weight: 700;
+            .jh-home-card-sumary{
+                text-decoration: line-through;
+            }
+
+        }
+      }
+    }
+  }
+
+  .jh-card-goods {
+    display: flex;
+    flex-wrap: wrap;
+    padding: @spacing-base;
+    color: black;
+    .jh-card-goods-img {
+      width: 100%;
+    }
+    .jh-card-goods-info {
+      width: 100%;
+      padding-top: @spacing-base;
+      background-color: #fff;
+    }
+    .jh-card-goods-title {
+      padding: 0 @spacing-2x-base;
+      margin-bottom: @spacing-base;
+    }
+    .jh-card-goods-tags {
+      display: flex;
+      padding: 0 @spacing-2x-base;
+      .cf-goods-vouchers {
+        background: linear-gradient(90deg, rgb(250, 111, 61), rgb(255, 68, 0));
+      }
+      .cf-goods-ret-money {
+        background: linear-gradient(
+          90deg,
+          rgb(247, 67, 147),
+          @background-theme
+        );
+      }
+      .jh-card-goods-tag {
+        display: inline-block;
+        padding: @spacing-base-small;
+        margin-right: @spacing-base-small;
+        border-radius: @spacing-base-small;
+        line-height: 1.2;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+    .jh-card-goods-rebate {
+      display: flex;
+      position: relative;
+      margin-top: @spacing-3x-base;
+      background-color: rgb(230, 20, 20);
+      color: #fff;
+      padding: @spacing-base-small @spacing-base;
+
+      .jh-card-rebate-money {
+        font-size: @spacing-3x-base;
+      }
+      .jh-card-rebate-sumary {
+        padding-left: @spacing-base;
+        flex: 1;
+      }
+      .jh-card-rebate-through {
+        text-decoration: line-through;
+      }
+      .jh-card-rebate-sales {
+        border: 0px solid black;
+        box-sizing: border-box;
+        display: inline-block;
+        flex-direction: row;
+        place-content: flex-start center;
+        flex-shrink: 0;
+        padding: 0px 6px;
+        background-color: rgba(0, 0, 0, 0.1);
+        align-items: center;
+        border-radius: 3px;
+      }
+      .cf-goods-button {
+        width: 42px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #ffed6b;
+        color: rgb(230, 20, 20);
+        display: flex;
+        font-size: @font-size-h8;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50% 0 0 50%;
+      }
+    }
+  }
+
+  .jh-home-goods {
+    .home-goods-superrebate {
+      .category {
+        height: 121px;
+        text-align: center;
+        position: relative;
+        background: url(//img.alicdn.com/tps/TB1WhPFOFXXXXb0aXXXXXXXXXXX-1-1.png)
+          50% repeat-x;
+        a {
+          display: inline-block;
+          width: 300px;
+          height: 100%;
+          background: url(//img.alicdn.com/tps/TB1adb0OFXXXXXzapXXXXXXXXXX-245-81.png)
+            50% no-repeat #f6f6f6;
+          .name {
+            font-weight: 700;
+            margin-top: 26px;
+            font-size: 28px;
+            color: #fb3434;
+          }
+          .desc {
+            font-size: 18px;
+            color: #999;
+          }
+          span {
+            display: block;
+            height: 32px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      padding: @spacing-2x-base;
+      li {
+        width: 20%;
+        box-sizing: border-box;
+        height: 352px;
+        border: 2px solid #fff;
+        margin-bottom: 12px;
+        transition: 0.2s;
+        &:hover {
+          border-color: @background-theme;
+        }
+      }
+    }
+
+    .home-card-goods {
+      padding: 0 8px;
+      color: #333;
+
+      .home-card-goods-img {
+        width: 100%;
+      }
+      .home-card-goods-title {
+        margin-top: @spacing-base;
+        margin-bottom: @spacing-base;
+      }
+      .home-card-goods-rebate {
+        margin-top: @spacing-base;
+      }
+      .home-card-rebate-money {
+        color: @background-theme;
+        font-size: @font-size-h9;
+        span {
+          font-size: @font-size-h8;
+          font-weight: bold;
+        }
+      }
+      .home-card-rebate-sumary {
+        font-size: @font-size-h10;
+        margin-top: @spacing-base-small;
+        color: #999;
+        display: flex;
+        justify-content: space-between;
+        .home-card-rebate-through {
+          text-decoration: line-through;
+        }
+      }
+      .home-card-goods-tags {
+        display: flex;
+        .cf-goods-vouchers {
+          background: linear-gradient(
+            90deg,
+            rgb(250, 111, 61),
+            rgb(255, 68, 0)
+          );
+        }
+        .cf-goods-ret-money {
+          background: linear-gradient(
+            90deg,
+            rgb(247, 67, 147),
+            @background-theme
+          );
+        }
+        .home-card-goods-tag {
+          display: inline-block;
+          padding: @spacing-base-small;
+          margin-right: @spacing-base-small;
+          border-radius: @spacing-base-small;
+          line-height: 1.2;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
